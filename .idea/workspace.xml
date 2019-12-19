@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="214b1b9b-7ae1-47d5-b8dc-3c4506bc750a" name="Default Changelist" comment="" />
+    <list default="true" id="214b1b9b-7ae1-47d5-b8dc-3c4506bc750a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/0zjq1kgtl167my14xrn1wuo11xygb2m1ry5j42g05c6ukbt01k.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/22x4q1jmms4m7npa8s551b6o5j3ieie13bm3g1zr0z1o2m831k.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/35m34deyj5um2aphaurpakyz1o4jxy3kl5go493o6lc431d12l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6lknb2xwa149581f151d114lx1y4277iks09w7wio1sr1yub1h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/i2je467311x20ig2h7ry977zo6xpzz3b3745h5tjb4vtsjq134.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/lbufn1t110421rtu55x1311d1iq411lj1t51a6yn1b12m1181v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ntp511fhe41hdnkfg1x3377zkl315wa5o15i53jm81hy4vyxt8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/oxr0q1j6f11dg111ey1pvu2ealfcmax13yx1aoggujnx3x62mx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/x1zb5g54l11q397as15m0b1yv1j8r12slsb4xn71psnlymenrr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constants.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,9 +23,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.12.9/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1V9YN92MiNn5v16Lv5aKgm0mivn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -49,6 +69,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>

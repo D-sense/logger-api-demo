@@ -2,19 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="214b1b9b-7ae1-47d5-b8dc-3c4506bc750a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/0zjq1kgtl167my14xrn1wuo11xygb2m1ry5j42g05c6ukbt01k.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/22x4q1jmms4m7npa8s551b6o5j3ieie13bm3g1zr0z1o2m831k.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/35m34deyj5um2aphaurpakyz1o4jxy3kl5go493o6lc431d12l.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/6lknb2xwa149581f151d114lx1y4277iks09w7wio1sr1yub1h.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/i2je467311x20ig2h7ry977zo6xpzz3b3745h5tjb4vtsjq134.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/lbufn1t110421rtu55x1311d1iq411lj1t51a6yn1b12m1181v.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/ntp511fhe41hdnkfg1x3377zkl315wa5o15i53jm81hy4vyxt8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/oxr0q1j6f11dg111ey1pvu2ealfcmax13yx1aoggujnx3x62mx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/x1zb5g54l11q397as15m0b1yv1j8r12slsb4xn71psnlymenrr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12f1n1ou4e1kgpcy1117qo3g411tp51111kfd101jzww301scn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/api/image.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/api/image.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/12t2ydtps82zb2849up42tkt3g83ayrz1pteiig102rt7s1r1f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/fsxa7f1tx55f8963vc1e5c0cm2vlmk1ui411wbd1dshwtyu1fi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/log/logger.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logrus.log" beforeDir="false" afterPath="$PROJECT_DIR$/logrus.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr/image.go" beforeDir="false" afterPath="$PROJECT_DIR$/uploader/image.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ocr/orc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/image_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/services/image_service.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/constants.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/constants.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/helpers.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/helpers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/validation.go" beforeDir="false" afterPath="$PROJECT_DIR$/utils/validation.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +82,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

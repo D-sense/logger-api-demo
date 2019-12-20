@@ -8,14 +8,14 @@ import (
 	"os"
 )
 
-// Event stores messages to log later, from our standard interface
-type Event struct {
+// LogEvent stores messages to log later, from our standard interface
+type LogEvent struct {
 	id      int
 	message string
 }
 
-// StandardLogger enforces specific log message formats
-type StandardLogger struct {
+// MainLogger enforces specific log message formats
+type MainLogger struct {
 	*logrus.Logger
 }
 
@@ -32,14 +32,14 @@ func init() {
 }
 
 // NewLogger initializes the standard logger
-func NewLogger() *StandardLogger {
+func NewLogger() *MainLogger {
 	f, err := os.OpenFile("logrus.log", os.O_APPEND|os.O_CREATE|os.O_RDWR, 0666)
 	if err != nil {
 		fmt.Printf("error opening file: %v", err)
 	}
 
 	var baseLogger = logrus.New()
-	var standardLogger = &StandardLogger{baseLogger}
+	var standardLogger = &MainLogger{baseLogger}
 
 	standardLogger.Formatter = &logrus.JSONFormatter{}
 
@@ -49,24 +49,24 @@ func NewLogger() *StandardLogger {
 	return standardLogger
 }
 
-// Declare variables to store log messages as new Events
+// Variables to store our log messages as new Events
 var (
-	invalidArgMessage      = Event{1, "Invalid arg: %s"}
-	invalidArgValueMessage = Event{2, "Invalid value for argument: %s: %v"}
-	missingArgMessage      = Event{3, "Missing arg: %s"}
+	invalidArgMessage      = LogEvent{1, "Invalid arg: %s"}
+	invalidArgValueMessage = LogEvent{2, "Invalid value for argument: %s: %v"}
+	missingArgMessage      = LogEvent{3, "Missing arg: %s"}
 )
 
-// InvalidArg is a standard error message
-func (l *StandardLogger) InvalidArg(argumentName string) {
+// Standard "InvalidArg error message
+func (l *MainLogger) InvalidArg(argumentName string) {
 	l.Errorf(invalidArgMessage.message, argumentName)
 }
 
-// InvalidArgValue is a standard error message
-func (l *StandardLogger) InvalidArgValue(argumentName string, argumentValue string) {
+// Standard "InvalidArgValue error message
+func (l *MainLogger) InvalidArgValue(argumentName string, argumentValue string) {
 	l.Errorf(invalidArgValueMessage.message, argumentName, argumentValue)
 }
 
-// MissingArg is a standard error message
-func (l *StandardLogger) MissingArg(argumentName string) {
+// "Standard "MissingArg error message"
+func (l *MainLogger) MissingArg(argumentName string) {
 	l.Errorf(missingArgMessage.message, argumentName)
 }

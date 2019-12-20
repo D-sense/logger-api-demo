@@ -1,5 +1,5 @@
 // Provides interface for uploading, and Fetching images
-package ocr
+package uploader
 
 import (
 	"context"
@@ -47,10 +47,4 @@ func (ImageRepo) UploadImage(ctx context.Context, imgInfo *ImageRepo) (string, e
 	return f.Name(), nil
 }
 
-func CheckImageID(imgID string ) (string, error){
-	imgName, err := utils.DecodeStringToBase64(imgID)
-	if err != nil {
-		return "", err
-	}
-	return imgName, nil
-}
+

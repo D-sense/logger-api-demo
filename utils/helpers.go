@@ -1,21 +1,17 @@
 package utils
 
 import (
-	"encoding/base64"
 	"encoding/json"
-	"fmt"
 	"math/rand"
 	"net/http"
-	"os"
 	_ "strconv"
 	"time"
-
-	"github.com/davecgh/go-spew/spew"
 )
 
 
 type TextResponse struct {
-	Text string `json:"text"`
+	Status    int    `json:"status"`
+	ImagePath string `json:"image_path"`
 }
 
 type TaskIdResponse struct {
@@ -43,25 +39,6 @@ func GenerateRandomWord(n int) string {
 	return string(b)
 }
 
-//os and file upload
-func CreateDirectory(foldername string) (string, error) {
-	_, err := os.Stat(foldername)
-	if os.IsNotExist(err) {
-		errDir := os.MkdirAll(foldername, 0755)
-		if errDir != nil {
-			return "", err
-		}
-	}
-
-	return foldername, nil
-}
-
-func SpewResultForDebugging(description string, v interface{}) {
-	fmt.Println("**** Start Result ******")
-	fmt.Println(description)
-	spew.Dump(v)
-	fmt.Println("**** End Result ******")
-}
 
 func (resp Error) RespondWithErrorJSON(w http.ResponseWriter, status int, error interface{}) {
 	w.Header().Set("Content-Type", "application/json")
@@ -75,7 +52,9 @@ func (resp Error) RespondWithErrorJSON(w http.ResponseWriter, status int, error 
 func (resp Success) RespondWithSuccessTextJSON(w http.ResponseWriter, text string) {
 	w.Header().Set("Content-Type", "application/json")
 	var response TextResponse
-	response.Text = text
+
+	response.Status = 200
+	response.ImagePath = text
 
 	resp.text = response
 
@@ -90,16 +69,4 @@ func (resp Success) RespondWithSuccessTaskIdJSON(w http.ResponseWriter, taskId s
 	resp.taskId = response
 
 	json.NewEncoder(w).Encode(resp.taskId)
-}
-
-func EncodeStringToBase64(imageName string) string {
-	return  base64.StdEncoding.EncodeToString([]byte(imageName))
-}
-
-func DecodeStringToBase64(taskId string) (string, error) {
-	s, err :=  base64.StdEncoding.DecodeString(taskId)
-	if err != nil {
-		return "", err
-	}
-	return string(s), nil
 }

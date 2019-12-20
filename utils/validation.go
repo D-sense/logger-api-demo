@@ -15,7 +15,7 @@ func ValidateImageInput(image string) (err map[string]ValidationErr) {
 	err = make(map[string]ValidationErr)
 
 	if image == "" {
-		err["Email"] = ErrMissingImage
+		err["image_data"] = ErrMissingImage
 	}
 
 	return err
